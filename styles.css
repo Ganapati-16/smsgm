@@ -167,3 +167,113 @@ footer {
         padding: 1.5rem;
     }
 }
+
+
+/*from here schedule now */
+.schedule-section {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 15px;
+
+    box-sizing: border-box;
+}
+
+
+/* Schedule Button */
+
+.schedule-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 13px 28px;
+
+    background: linear-gradient(135deg, #6c63ff, #8e7dff);
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    border-radius: 30px;
+
+    box-shadow: 0 6px 18px rgba(108, 99, 255, 0.3);
+
+    transition: all 0.3s ease;
+}
+
+
+/* Laptop/Desktop */
+
+@media (min-width: 769px) {
+
+    .schedule-section {
+        padding: 35px 20px;
+    }
+
+    .schedule-btn {
+        font-size: 17px;
+        padding: 14px 32px;
+    }
+
+}
+
+
+/* Hover */
+
+.schedule-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(108, 99, 255, 0.4);
+}
+
+
+/* Click */
+
+.schedule-btn:active {
+    transform: scale(0.96);
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .schedule-section {
+        padding: 25px 15px;
+    }
+
+    .schedule-btn {
+        font-size: 15px;
+
+        padding: 12px 24px;
+
+        border-radius: 28px;
+    }
+
+}
+
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+
+    .schedule-section {
+        padding: 22px 10px;
+    }
+
+    .schedule-btn {
+        font-size: 14px;
+
+        padding: 11px 21px;
+    }
+
+}
